@@ -1,11 +1,11 @@
 import re
 import requests
 
-API_KEY = "AIzaSyAoWbs3ObIbzOFmNEAj_iIFfF6wmqikT0M"
-SEARCH_ENGINE_ID = "f55af49847b6c4dc8"
+API_KEY = "Your api key"
+SEARCH_ENGINE_ID = "your search engine id"
 
 def get_google_summary(query):
-    url = f"https://www.googleapis.com/customsearch/v1?q={query} &key={API_KEY}&cx={SEARCH_ENGINE_ID}"
+    url = f"your url={query} &key={API_KEY}&cx={SEARCH_ENGINE_ID}"
     response = requests.get(url)
     data = response.json()
 
