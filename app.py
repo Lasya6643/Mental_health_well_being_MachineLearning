@@ -7,7 +7,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 # MongoDB Connection
-client = MongoClient("mongodb+srv://josephpeterjece2021:AJ9Hg6xTtQBUCoGr@cluster1.xaacunv.mongodb.net/feedback?retryWrites=true&w=majority")
+client = MongoClient("your mongodb link")
 db = client["feedback"]
 feedback_collection = db["feedbacks"]   
 
@@ -15,12 +15,12 @@ feedback_collection = db["feedbacks"]
 with open("mental_health_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-YOUTUBE_API_KEY = "AIzaSyCmVoVbMIEUaARPCyKK5t_6DXLsCljKKYI"
-YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
-BOOKS_API_URL = "https://www.googleapis.com/books/v1/volumes"
+YOUTUBE_API_KEY = "your api key"
+YOUTUBE_SEARCH_URL = "your url"
+BOOKS_API_URL = "your api url"
 
-API_KEY = "AIzaSyAoWbs3ObIbzOFmNEAj_iIFfF6wmqikT0M"
-SEARCH_ENGINE_ID = "f55af49847b6c4dc8"
+API_KEY = "ur id"
+SEARCH_ENGINE_ID = "your search id"
 
 def get_forums(query):
     url = f"https://www.googleapis.com/customsearch/v1?q={query}&key={API_KEY}&cx={SEARCH_ENGINE_ID}"
