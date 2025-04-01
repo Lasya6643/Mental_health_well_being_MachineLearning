@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- About Us Button -->
+    <a href="#about" class="about-us-button">About Us</a>
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Mental Health Matters</h1>
+            <p>"Mental health is not a destination, but a process. It's about how you drive, not where you're going."</p>
+            <p class="tagline">Your well-being is our priority. Powered by machine learning to provide personalized insights and support.</p>
+        </div>
+    </header>
+
+    <!-- What We Offer Section -->
+    <section class="offerings">
+        <h2>What We Offer</h2>
+        <div class="offerings-container">
+            <!-- First Line -->
+            <div class="offering">
+                <img src="support_group_icon.png" alt="Support Group Icon">
+                <h3>Support Groups</h3>
+                <p>Connect with peers who understand your challenges and grow together in a supportive environment.</p>
+            </div>
+            <div class="offering">
+                <img src="therapist_icon.png" alt="Therapists Icon">
+                <h3>Therapists</h3>
+                <p>Find qualified professionals to guide you through your mental health journey.</p>
+            </div>
+            <div class="offering">
+                <img src="articles_icon.png" alt="Articles Icon">
+                <h3>Articles</h3>
+                <p>Access curated articles and resources to educate yourself about mental health.</p>
+            </div>
+            <div class="offering">
+                <img src="diagnosis_icon.png" alt="Diagnosis Icon">
+                <h3>Diagnosis</h3>
+                <p>Take our comprehensive assessments to better understand your mental health needs.</p>
+            </div>
+            <!-- Second Line -->
+            <div class="offering">
+                <img src="stigma_icon.png" alt="Stigma Icon">
+                <h3>Breaking Stigma</h3>
+                <p>Join us in addressing the stigma around mental health, especially for youth.</p>
+            </div>
+            <div class="offering">
+                <img src="podcasts_icon.png" alt="Podcasts Icon">
+                <h3>Podcasts</h3>
+                <p>Listen to experts and real-life stories that inspire and inform about mental health topics.</p>
+            </div>
+            <div class="offering">
+                <img src="books_icon.png" alt="Books Icon">
+                <h3>Books</h3>
+                <p>Explore a curated list of books that provide insights into mental health and personal growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questionnaire Section -->
+    <section class="questionnaire">
+        <h2 class="questionnaire-title">Mental Health Questionnaire</h2>
+        <p class="questionnaire-description">Please fill out the following form to help us understand your mental health needs:</p>
+        <form id="mental-health-form" class="form-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="mood">How do you feel today? (1: Worst, 10: Best)</label>
+            <input type="range" id="mood" name="mood" min="1" max="10" required>
+
+            <label for="sleep-quality">How would you describe your sleep pattern?</label>
+            <select id="sleep-quality" name="sleep-quality" required>
+                <option value="">Select</option>
+                <option value="irregular">Irregular</option>
+                <option value="adequate">Adequate</option>
+                <option value="restful">Restful</option>
+                <option value="disturbed">Disturbed</option>
+            </select>
+
+            <label for="hobbies">Have you lost interest in hobbies or activities you usually enjoy?</label>
+            <select id="hobbies" name="hobbies" required>
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="social">Do you feel connected to your social circle?</label>
+            <select id="social" name="social" required>
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="focus">Have you been experiencing difficulty focusing or concentrating?</label>
+            <select id="focus" name="focus" required>
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="exercise">Do you engage in regular physical activity?</label>
+            <select id="exercise" name="exercise" required>
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="self-esteem">How would you rate your self-esteem?</label>
+            <select id="self-esteem" name="self-esteem" required>
+                <option value="">Select</option>
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+            </select>
+
+            <!-- Additional Questions -->
+            <label for="stress-level">How stressed do you feel on a daily basis?</label>
+            <select id="stress-level" name="stress-level" required>
+                <option value="">Select</option>
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+            </select>
+
+            <label for="social-support">Do you feel you have a strong support system in your life?</label>
+            <select id="social-support" name="social-support" required>
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="recent-changes">Have you experienced any major life changes recently?</label>
+            <select id="recent-changes" name="recent-changes" required>
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Analyze</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mental Health Monitoring | Built with care for youth using machine learning technology</p>
+    </footer>
+</body>
+</html>
