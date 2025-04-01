@@ -1,10 +1,10 @@
 import requests
 
-API_KEY = "AIzaSyAoWbs3ObIbzOFmNEAj_iIFfF6wmqikT0M"
-SEARCH_ENGINE_ID = "f55af49847b6c4dc8"
+API_KEY = "your api key"
+SEARCH_ENGINE_ID = "search enigine id"
 
 def get_forums(query):
-    url = f"https://www.googleapis.com/customsearch/v1?q={query}&key={API_KEY}&cx={SEARCH_ENGINE_ID}"
+    url = f"your url ={query}&key={API_KEY}&cx={SEARCH_ENGINE_ID}"
     response = requests.get(url)
     results = response.json()
     
